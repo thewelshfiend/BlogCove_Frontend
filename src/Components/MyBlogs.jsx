@@ -254,7 +254,7 @@ const MyBlogs = () => {
                     }
                 }}><BiSolidRightArrow /></button>
             </div>
-            <div className={`fixed rounded sm:rounded-full ${(skip == 0 && noBlogs) ? 'top-[53dvh] sm:top-[55dvh] sm:right-[43.5dvw] right-[38dvw]' : 'top-[53dvh] sm:top-[48dvh] sm:right-10 right-2'} bg-blue-900 hover:bg-blue-700`} style={{ display: `${(skip > 0 && noBlogs) ? 'none' : 'block'}` }}>
+            <div className={`fixed ${(skip == 0 && noBlogs) ? 'rounded-full top-[53dvh] sm:top-[55dvh] sm:right-[43.5dvw] right-[38dvw]' : 'rounded top-[53dvh] sm:top-[48dvh] sm:right-10 right-2'} bg-blue-900 hover:bg-blue-700`} style={{ display: `${(skip > 0 && noBlogs) ? 'none' : 'block'}` }}>
                 <button className={`text-gray-950 flex sm:px-3 ${skip == 0 && noBlogs && 'px-2'} items-center outline-none`} type="button" onClick={handleInput}><span className={`${(skip == 0 && noBlogs) ? 'inline' : 'hidden'} sm:inline text-lg`}>Create</span><MdFiberNew className='text-4xl' /></button>
             </div>
         </>
