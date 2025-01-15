@@ -238,7 +238,7 @@ const MyBlogs = () => {
                         })}
                     </div>
             }
-            <div className='fixed sm:bottom-4 sm:left-24 bottom-1 left-1 flex flex-col sm:flex-row justify-center items-center bg-purple-950 bg-opacity-40 hover:bg-opacity-80 backdrop-blur-lg px-3 py-1 rounded-lg'>
+            <div className='fixed sm:bottom-4 sm:left-24 bottom-10 left-1 flex flex-col sm:flex-row justify-center items-center bg-purple-950 bg-opacity-40 hover:bg-opacity-80 backdrop-blur-lg px-3 py-1 rounded-lg'>
                 <button className="hover:text-blue-800" type='button' onClick={() => {
                     if (page > 1) {
                         setPage(page - 1);
@@ -246,7 +246,7 @@ const MyBlogs = () => {
                         setNoBlogs(false);
                     }
                 }}><BiSolidLeftArrow /></button>
-                <span className='text-sm text-center text-blue-500 sm:w-20 pb-'><span className='sm:inline hidden'>Page </span>{page}</span>
+                <span className='text-sm text-center text-blue-500 sm:w-20 sm:py-0 py-2'><span className='sm:inline hidden'>Page </span>{page}</span>
                 <button className="hover:text-blue-800" type='button' onClick={() => {
                     if (error == '') {
                         setPage(page + 1);

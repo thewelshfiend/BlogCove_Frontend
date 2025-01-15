@@ -110,11 +110,11 @@ const BlogF = ({ blog }) => {
     }
 
     return (
-        <div className='blog-f sm:w-8/12 w-10/12 min-w-52 h-fit shadow-xl bg-green-500 rounded-2xl flex flex-col'>
-            <section className='info flex items-center justify-between bg-green-600 rounded-tl-2xl rounded-tr-2xl text-sm ps-2 pe-4 py-2'>
+        <div className='blog-f sm:w-8/12 w-10/12 min-w-52 h-fit shadow-xl bg-green-200 sm:bg-green-500 rounded-2xl flex flex-col'>
+            <section className='info flex items-center justify-between bg-green-300 sm:bg-green-600 rounded-tl-2xl rounded-tr-2xl text-sm ps-2 pe-4 py-2'>
                 <div className='flex items-center gap-2'>
                     <PiUserCircleFill className='text-4xl' />
-                    <h3 className='font-medium text-lg sm:text-sm'>{blog.userId.username}</h3>
+                    <h3 className='font-medium text-sm'>{blog.userId.username}</h3>
                 </div>
                 {followingIDs[blog.userId._id] ?
                     <button className='unfollow sm:text-sm text-xs' type="button" onClick={handleUnfollow}>Unfollow</button> :

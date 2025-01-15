@@ -234,11 +234,11 @@ const BlogMB = ({ blog, username }) => {
     }
 
     return (
-        <div className={`blog-mb ${isDeleted && 'hidden'} sm:w-8/12 w-10/12 min-w-52 h-fit shadow-xl bg-purple-500 rounded-2xl flex flex-col`}>
-            <section className='info flex items-center justify-between bg-purple-600 rounded-tl-2xl rounded-tr-2xl text-sm ps-2 pe-4 py-2'>
+        <div className={`blog-mb ${isDeleted && 'hidden'} sm:w-8/12 w-10/12 min-w-52 h-fit shadow-xl bg-purple-300 sm:bg-purple-500 rounded-2xl flex flex-col`}>
+            <section className='info flex items-center justify-between bg-purple-400 sm:bg-purple-600 rounded-tl-2xl rounded-tr-2xl text-sm ps-2 pe-4 py-2'>
                 <div className='flex items-center gap-2'>
                     <PiUserCircleFill className='text-4xl' />
-                    <h3 className='font-medium text-lg sm:text-sm'>{username}</h3>
+                    <h3 className='font-medium text-sm'>{username}</h3>
                 </div>
                 <div className='flex items-center gap-2'>
                     <button className='edit sm:text-lg text-sm outline-none' disabled={editWindow > 30} type="button" onClick={handleEdit}><MdEditDocument /></button>

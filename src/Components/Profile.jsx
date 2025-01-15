@@ -116,7 +116,7 @@ const Profile = () => {
         <div className='h-dvh overflow-y-auto px-4 md:px-3 py-7 flex md:flex-row flex-col gap-3 md:gap-6 justify-center items-stretch'>
             <section id='panel1' className='panel bg-purple-900 bg-opacity-50 backdrop-blur-xl rounded-xl md:p-4 md:h-full min-h-[30%] w-full md:w-7/12 lg:w-5/12 overflow-hidden flex md:flex-col items-center min-w-64'>
                 <article id='pfp' className='md:w-fit w-[55%] px-2  h-[80%] md:h-[65%] border-r-2 md:border-r-0 border-b-0 md:border-b-2 border-teal-500'>
-                    <PiUserCircleFill className='object-cover text-slate-400 h-full w-full' />
+                    <PiUserCircleFill className='object-cover text-slate-300 h-full w-full' />
                 </article>
                 <article className='w-full md:py-10 md:px-10 ps-10 pe-2 text-sm md:text-lg flex-grow flex flex-col md:items-center'>
                     <h2 className='text-2xl font-semibold text-sky-500 pb-3'>User Details</h2>
@@ -126,7 +126,7 @@ const Profile = () => {
                 </article>
             </section>
             <section id='panel2' className='panel bg-purple-900 bg-opacity-50 backdrop-blur-xl rounded-xl p-3 flex-grow overflow-hidden flex flex-col items-center min-w-fit'>
-                <article id='post-stats' className='w-fit md:px-32 px-10 min-h-[12%] border-4 border-blue-800 rounded-sm grid place-items-center text-purple-500 font-medium text-2xl overflow-x-hidden'>
+                <article id='post-stats' className='w-fit md:px-32 px-10 min-h-[12%] border-4 border-blue-900 rounded-sm grid place-items-center text-purple-400 font-medium text-2xl overflow-x-hidden'>
                     <div className='flex items-center gap-2 text-nowrap overflow-x-auto'><h2 id='post-caption'>Posts created:</h2><span className='animate-bounce'>{blogCount}</span></div>
                 </article>
                 <article id='follow-container' className='relative flex-grow mt-5 rounded-3xl w-full md:w-4/5 px-6 py-5 overflow-y-hidden flex flex-col justify-start'>

@@ -839,8 +839,7 @@ nav.desktop {
 
 .panel {
     transition: all 0.6s ease-in-out;
-
-    background-image: linear-gradient(to bottom right, rgba(0, 84, 92, 0.623), rgb(58, 0, 135));
+    background-image: linear-gradient(to bottom right, rgba(3, 170, 185, 0.76), rgb(90, 3, 203));
 
     @media screen and (min-width: 771px) {
         box-shadow: 2px 1px 10px 1px rgba(1, 102, 111, 0.748);
@@ -912,7 +911,7 @@ nav.desktop {
     position: absolute;
     width: 49%;
     height: 38px;
-    background-color: #749592;
+    background-color: #9fc9c5;
     top: 4px;
     left: 4px;
     border-radius: 30px;
@@ -936,10 +935,11 @@ nav.desktop {
 
 #option1:not(:checked)+label[for="option1"],
 #option2:not(:checked)+label[for="option2"] {
-    color: #7d7d7d;
+    color: #3a3a3a;
 }
 
 #panel1>article:nth-child(2)>div {
+
     &>span:nth-child(2),
     &>a {
         color: rgb(147, 211, 231);
@@ -955,20 +955,20 @@ nav.desktop {
 
     &:hover {
         background-color: rgb(5, 59, 97);
-        color: rgb(231, 230, 230);
+        color: rgb(231, 230, 230) !important;
     }
 }
 
 .follow-mini {
     padding: 2px 15px;
     background-color: rgb(18, 38, 102);
-    color: rgb(176, 176, 176);
+    color: rgb(178, 181, 193);
 }
 
 .unfollow-mini {
     padding: 2px 12px;
     border: 2px solid rgb(1, 25, 103);
-    color: rgb(209, 213, 228);
+    color: rgb(178, 181, 193);
 }
 
 .follow-card {
@@ -980,10 +980,24 @@ nav.desktop {
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        background-color: rgba(3, 203, 187, 0.365);
+        background-color: rgba(3, 146, 203, 0.861);
         color: black;
+
+        & .unfollow-mini {
+            color: rgb(0, 26, 129);
+        }
     }
-    @media screen and (min-width: 771px) {
+
+    @media screen and (min-width: 771px) {}
+}
+
+.follow-card:not(:hover) {
+    & .unfollow-mini {
+        border-color: rgb(1, 50, 211);
+    }
+
+    & .follow-mini {
+        background-color: rgb(3, 39, 156);
     }
 }
 
