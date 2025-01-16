@@ -19,6 +19,6 @@
 
 ---
 
-## Deployment
+## Note
 
-- **Link**: [BlogCove](https://blogcove.onrender.com/auth)
+- **Visit for full source code**: [Full Repo](https://github.com/thewelshfiend/BlogCove_Backend)
