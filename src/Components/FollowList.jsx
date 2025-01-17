@@ -269,7 +269,7 @@ const FollowList = ({ setFollowCount, followCount, toggle, skip, setSkip, page, 
                             )
                         }) : followersList.map((follower) => {
                             return (
-                                <div key={follower._id} className='follow-card flex items-center justify-between rounded-2xl px-4 md:py-2 overflow-x-hidden min-w-fit'>
+                                <div key={follower._id} className='follow-card flex items-center justify-between rounded-2xl px-4 md:py-2 overflow-x-hidden min-h-fit min-w-fit'>
                                     <div className='lg:h-16 h-14 min-w-fit flex items-center gap-2'>
                                         <PiUserCircleFill className='text-2xl md:w-full w-10 h-full' />
                                         <h3 className='lg:text-lg text-sm font-semibold text-nowrap'>{follower.name}</h3>
