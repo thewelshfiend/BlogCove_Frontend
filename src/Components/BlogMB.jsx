@@ -112,7 +112,7 @@ const BlogMB = ({ blog, username }) => {
                             </div>
                         ));
                         setEditedTitle(title);
-                        setEditedTextBody(textBody);
+                        setEditedTextBody(textBody.split('\n'));
                         break;
                     case 400:
                         toast.custom((t) => (
