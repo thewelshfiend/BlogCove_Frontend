@@ -53,7 +53,7 @@ const SignIn = ({ page, setPage }) => {
                         break;
                     case 400:
                         toast.custom((t) => (
-                            <div className='flex justify-between items-center bg-red-900 border-red-600 border-2 rounded-lg py-5 ms-[35%] sm:ms-[30%] px-3 shadow-sm bg-opacity-80 w-[65%] sm:w-[130%]'>
+                            <div className='flex justify-between items-center bg-red-900 border-red-600 border-2 rounded-lg py-5 ms-[35%] sm:ms-[50%] px-3 shadow-sm bg-opacity-80 w-[65%] sm:w-[110%]'>
                                 <h1 className='text-red-600 font-semibold flex items-center gap-3'><BiSolidErrorAlt className='text-3xl' />{res.data.message}</h1>
                                 <button type='button' onClick={() => toast.dismiss(t)}><RxCrossCircled className='text-red-500 text-lg' /></button>
                             </div>
